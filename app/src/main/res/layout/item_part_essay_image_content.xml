@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/content_layout" android:background="?bg_list_item_middle" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/list_item_content_layout">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:placeholderImage="?image_holder_listpage" fresco:placeholderImageScaleType="fitXY" fresco:retryImage="?image_reload_placeholder" fresco:retryImageScaleType="fitXY" fresco:failureImage="?image_reload_placeholder" fresco:failureImageScaleType="fitXY" fresco:actualImageScaleType="focusCrop" />
+        <ImageView android:id="@id/btn_play" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gifbutton_textpage" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/image_crop_side" android:background="@drawable/bg_pic_cut" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignLeft="@id/image" android:layout_alignRight="@id/image" android:layout_alignBottom="@id/image">
+            <TextView android:textSize="13.0sp" android:textColor="#ffe1e1e1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crop_image_tip" android:drawableLeft="@drawable/ic_expand_pic" android:drawablePadding="10.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

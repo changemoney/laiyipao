@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tab_indicator_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/indicator_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/tab_widget_text" />
+    <FrameLayout android:id="@id/indicator_icon_wrapper" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/indicator_title" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/indicator_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:id="@id/indicator_new" android:background="?myHeadRedNotify" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/message_tab_dot" android:minHeight="@dimen/message_tab_dot" android:layout_toRightOf="@id/indicator_icon_wrapper" android:layout_alignParentTop="true" style="@style/message_badge" />
+</RelativeLayout>

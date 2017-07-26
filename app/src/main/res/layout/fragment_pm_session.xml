@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pm_send_layout" android:background="?bg_pm_send_layout" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <EditText android:textColor="?pm_self_content_text" android:textColorHint="?pm_send_box_text_hint" android:layout_gravity="center_vertical" android:id="@id/pm_send_edit" android:background="?bg_input_box" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:hint="@string/pm_send_hint" android:layout_weight="1.0" />
+        <ImageView android:id="@id/pm_send_img" android:paddingLeft="12.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?pm_send_img_btn" />
+        <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="?pm_send_btn_text" android:layout_gravity="center_vertical" android:id="@id/pm_send" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pm_send" />
+    </LinearLayout>
+    <com.ss.android.essay.base.widget.PMMessageListView android:id="@id/pm_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/pm_send_layout" style="@style/essay_list_style" />
+</RelativeLayout>

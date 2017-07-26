@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/normal_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="215.0dip" android:minHeight="135.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="125.0dip" android:layout_height="10.0dip" android:layout_marginTop="25.0dip" android:progressDrawable="@drawable/progress_bar" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="20.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffff8400" android:gravity="center" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/cancel" />
+</LinearLayout>

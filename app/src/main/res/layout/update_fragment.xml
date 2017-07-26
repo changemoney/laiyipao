@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transparent_selector" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" />
+    <TextView android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_alignTop="@id/listview" style="@style/list_notify_view" />
+    <FrameLayout android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/empty_view_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/social_error_tip_no_update" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+    <include android:id="@id/profile_edit_toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/profile_edit_toolbar" />
+</RelativeLayout>

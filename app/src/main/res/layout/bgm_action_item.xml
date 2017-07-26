@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="#ff77d4e8" android:gravity="center" android:id="@id/original_swither" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/original_sound_on" android:drawableTop="@drawable/ic_original_sound" android:drawablePadding="5.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/bgm_title_color" android:gravity="center" android:id="@id/bgm_swither" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/bgm_off" android:drawableTop="@drawable/ic_bgm_state" android:drawablePadding="5.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/bgm_title_color" android:gravity="center" android:id="@id/local_music" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/local" android:drawableTop="@drawable/ic_local_music" android:drawablePadding="5.0dip" />
+</LinearLayout>

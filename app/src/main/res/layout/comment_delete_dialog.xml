@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?more_action_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="?more_action_dialog_cancel" android:gravity="center" android:id="@id/copy_btn" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/action_copy" />
+    <View android:background="?list_item_divider" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="?more_action_dialog_cancel" android:gravity="center" android:id="@id/reply_btn" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/reply" />
+    <View android:id="@id/delete_divider" android:background="?list_item_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="#ffe64340" android:gravity="center" android:id="@id/delete_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/comment_delete" />
+    <View android:background="?list_item_divider" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="?more_action_dialog_cancel" android:gravity="center" android:id="@id/cancel_btn" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/cancel" />
+</LinearLayout>

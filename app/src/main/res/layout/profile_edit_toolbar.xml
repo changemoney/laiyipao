@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?profile_toolbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff28a1ce" android:gravity="center" android:id="@id/edit_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/profile_edit_cancel" android:layout_weight="1.0" />
+    <View android:background="?profile_toolbar_middle_line_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff28a1ce" android:gravity="center" android:id="@id/edit_del" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/profile_edit_del" android:layout_weight="1.0" />
+</LinearLayout>

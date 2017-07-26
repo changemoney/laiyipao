@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/new_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:placeholderImage="?image_holder_listpage" fresco:placeholderImageScaleType="fitXY" fresco:retryImage="?image_reload_placeholder" fresco:retryImageScaleType="fitXY" fresco:failureImage="?image_reload_placeholder" fresco:failureImageScaleType="fitXY" fresco:actualImageScaleType="centerCrop" />
+    <ImageView android:id="@id/btn_play" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gifbutton_textpage" android:layout_centerInParent="true" />
+</RelativeLayout>

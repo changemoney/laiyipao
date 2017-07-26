@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/essay_list_style" />
+    <RelativeLayout android:id="@id/notify_layout" android:background="?bg_notify" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/notify_view_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/list_notify_view" />
+    </RelativeLayout>
+    <TextView android:id="@id/scroll_notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_notify_view" />
+    <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_layout" />
+    <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/error_layout" />
+</RelativeLayout>

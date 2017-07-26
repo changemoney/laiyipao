@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="?voteActivityBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" style="@style/title_bar_style">
+        <include layout="@layout/profile_badge_layout" />
+        <TextView android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0dip" android:layout_marginRight="75.0dip" android:singleLine="true" android:layout_centerInParent="true" style="@style/title_text_style" />
+        <ImageView android:id="@id/publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?ic_publish" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:layout_gravity="fill_horizontal" android:id="@id/swipe_overlay" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <com.ss.android.common.ui.view.MyViewPager android:id="@id/vote_essay_pager" android:background="@drawable/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/swipe_overlay" android:layout_alignTop="@id/swipe_overlay" android:layout_alignRight="@id/swipe_overlay" android:layout_alignBottom="@id/swipe_overlay">
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/ugc_error_layout" android:visibility="gone" android:layout_below="@id/title_bar" style="@style/vote_login_layout">
+        <ImageView android:id="@id/vote_error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ugc_tip_loading_essay" />
+        <TextView android:id="@id/vote_login" android:text="@string/ugc_button_login" style="@style/vote_login_btn" />
+    </LinearLayout>
+    <ImageView android:id="@id/anim_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/guide_view" android:background="?mainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="?review_guide_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/review_guide_text" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="?voteGuidePic" />
+                <TextView android:textSize="18.0sp" android:textColor="?start_review_btn_text" android:gravity="center" android:id="@id/vote_start_btn" android:background="?start_review_btn_bg" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginTop="50.0dip" android:layout_marginBottom="20.0dip" android:text="@string/ugc_button_start_vote" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

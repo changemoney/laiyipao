@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ss_write_comment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/ss_write_comment_layout">
+        <TextView android:id="@id/ss_write_comment" style="@style/ss_write_comment" />
+    </LinearLayout>
+    <ListView android:id="@id/ss_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ss_write_comment_layout" android:layout_below="@id/title_bar" style="@style/ss_comment_list" />
+    <TextView android:gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/ss_empty_comment_text" />
+    <View android:layout_above="@id/ss_write_comment_layout" style="@style/ss_toolbar_shadow" />
+    <View android:id="@id/night_mode_overlay" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</RelativeLayout>

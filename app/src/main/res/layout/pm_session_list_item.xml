@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?bg_item_tab_message" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pm_session_avatar" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="?pm_session_time_text" android:id="@id/pm_session_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/pm_session_badge" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="-5.0dip" android:layout_alignTop="@id/pm_session_avatar" android:layout_alignRight="@id/pm_session_avatar" style="@style/message_badge" />
+    <TextView android:id="@id/pm_session_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/pm_session_time" android:layout_toRightOf="@id/pm_session_avatar" android:layout_alignTop="@id/pm_session_avatar" style="@style/message_maintab_item_title" />
+    <TextView android:textSize="13.0sp" android:textColor="?pm_session_content_text" android:ellipsize="end" android:id="@id/pm_session_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/pm_session_time" android:layout_toRightOf="@id/pm_session_avatar" android:layout_alignBottom="@id/pm_session_avatar" />
+</RelativeLayout>

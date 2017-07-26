@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/title_bar" android:layout_height="@dimen/top_title_bar_height" style="@style/title_bar_style">
+        <TextView android:id="@id/back" android:visibility="visible" android:text="" style="@style/back_view" />
+        <TextView android:id="@id/activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommend_following" android:layout_centerInParent="true" style="@style/title_text_style" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

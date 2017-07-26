@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.essay.media.widget.VideoCoverView android:id="@id/video_edit_cover_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <com.ss.android.essay.media.widget.StickersFrameLayout android:id="@id/video_edit_stickers_framelayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ss.android.sdk.view.RotateImageView android:id="@id/content_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    </com.ss.android.essay.media.widget.StickersFrameLayout>
+    <ImageView android:id="@id/media_edit_frame_prev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_switch_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/media_edit_frame_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_switch_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/video_edit_top_mask" android:background="@color/video_record_mask_color" android:paddingLeft="@dimen/video_record_layout_padding_horizontal" android:paddingRight="@dimen/video_record_layout_padding_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/video_record_top_mask_height">
+        <ImageButton android:id="@id/video_edit_cancel_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_back_preview" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/video_edit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_preview_senior" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/video_edit_complete_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/ic_ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/video_edit_bottom_panel" android:background="#dd000000" android:layout_width="fill_parent" android:layout_height="@dimen/video_edit_bottom_panel_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/video_edit_tool_panel" android:background="@color/black" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/video_edit_text_sticker" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/video_edit_text_sticker" android:drawableLeft="@drawable/ic_text_sticker" android:drawablePadding="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/video_edit_image_sticker" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/video_edit_image_sticker" android:drawableLeft="@drawable/ic_image_sticker" android:drawablePadding="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/video_edit_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/video_edit_clear" android:drawableLeft="@drawable/ic_edit_clear" android:drawablePadding="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/video_edit_list_panel" android:background="#ff191919" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="2.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/video_edit_sticker_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/media_sticker_layout_close" />
+            <com.ss.android.essay.media.widget.GraceListView android:orientation="horizontal" android:id="@id/video_edit_sticker_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:listSelector="@drawable/essay_list_selector" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/video_edit_bottom_mask" android:background="@color/media_preview_mask_color" android:layout_width="fill_parent" android:layout_height="@dimen/video_senior_bottom_mask_height" android:layout_above="@id/video_edit_bottom_panel">
+        <com.ss.android.essay.media.widget.GraceListView android:layout_gravity="center" android:orientation="horizontal" android:id="@id/video_edit_frames_view" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="3.0dip" android:listSelector="@drawable/essay_list_selector" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

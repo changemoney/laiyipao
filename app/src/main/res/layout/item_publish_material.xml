@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/thumb" android:layout_width="@dimen/publish_photo_thumb_size" android:layout_height="@dimen/publish_photo_thumb_size" android:layout_marginTop="8.0dip" fresco:actualImageScaleType="focusCrop" />
+    <ImageView android:id="@id/video_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_indicator" android:scaleType="center" android:layout_alignLeft="@id/thumb" android:layout_alignTop="@id/thumb" android:layout_alignRight="@id/thumb" android:layout_alignBottom="@id/thumb" />
+    <ImageView android:id="@id/delete" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/img_indicator" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

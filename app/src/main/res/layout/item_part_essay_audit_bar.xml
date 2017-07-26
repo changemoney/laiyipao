@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/essay_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.common.ui.view.UnPressableLinearLayout android:orientation="horizontal" android:id="@id/audit_bar" android:background="?bg_list_item_below" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/digg_audit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?ic_audit_funny" />
+            <TextView android:layout_marginLeft="10.0dip" android:text="@string/item_digg_action_label" style="?attr/ss_audit_action_text" />
+        </LinearLayout>
+        <View android:background="?list_item_verticle_line" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bury_audit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?ic_audit_unfunny" />
+            <TextView android:layout_marginLeft="10.0dip" android:text="@string/item_bury_action_label" style="?attr/ss_audit_action_text" />
+        </LinearLayout>
+    </com.ss.android.common.ui.view.UnPressableLinearLayout>
+</RelativeLayout>

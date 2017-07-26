@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="#ff645c5b" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:background="#ff645c5b" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/munion_user_state_content" android:background="#ff645c5b" android:layout_width="fill_parent" android:layout_height="150.0dip">
+            <Button android:textSize="12.0sp" android:textColor="#ffafaeae" android:id="@id/logout" android:background="@drawable/munion_mymunion_logout_selector" android:layout_width="48.0dip" android:layout_height="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="退出" android:layout_alignParentRight="true" />
+            <LinearLayout android:gravity="center" android:id="@id/avatar_layout" android:background="@android:color/white" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginTop="25.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/avatar" android:background="@drawable/munion_user_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/jifenbao_login" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="100.0dip" android:src="@drawable/munion_mymunion_jifenbao_login" android:layout_above="@id/login" android:layout_centerHorizontal="true" />
+            <Button android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/login" android:background="@drawable/munion_logout_selector" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginBottom="25.0dip" android:text="@string/munion_mymuion_logout" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffafaeae" android:gravity="center|top" android:id="@id/munion_jifenbao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/munion_actionbar" android:layout_below="@id/munion_user_state_content">
+            <RelativeLayout android:id="@id/munion_guess_like" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff434343" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:text="猜你喜欢" />
+                <ImageView android:layout_width="15.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:src="@drawable/munion_ew2_mymunion_arrows" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/munion_his_record" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff434343" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:text="历史记录" />
+                <ImageView android:layout_width="15.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:src="@drawable/munion_ew2_mymunion_arrows" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/munion_fav_list" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff434343" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:text="愿望清单" />
+                <ImageView android:layout_width="15.0dip" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:src="@drawable/munion_ew2_mymunion_arrows" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.taobao.munion.ewall2.BottomTabView android:id="@id/bottomBar" android:background="@drawable/munion_bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.taobao.munion.common.fragment.FragmentViewBase>

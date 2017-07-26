@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/avatar_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/profile_avatar" android:layout_width="@dimen/discovery_title_avatar_size" android:layout_height="@dimen/discovery_title_avatar_size" android:layout_centerVertical="true" custom:placeholderImage="?discovery_title_avatar" custom:actualImageScaleType="centerCrop" custom:roundAsCircle="true" />
+    <ImageView android:id="@id/profile_badge" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?ic_badge" android:layout_alignTop="@id/profile_avatar" android:layout_alignRight="@id/profile_avatar" />
+    <TextView android:textSize="10.0sp" android:textColor="?myHeadNotifyText" android:gravity="center" android:id="@id/profile_notify" android:background="?myHeadRedNotify" android:visibility="invisible" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="-5.0dip" android:layout_alignTop="@id/profile_avatar" android:layout_alignRight="@id/profile_avatar" />
+</RelativeLayout>

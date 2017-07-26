@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?list_item_god_comment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="9.0sp" android:textColor="?feed_god_comment_label_text" android:gravity="center" android:id="@id/hot_comment_label" android:background="?feed_god_comment_label_bg" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="13.0dip" android:text="@string/hot_comment_label" android:includeFontPadding="false" />
+</LinearLayout>

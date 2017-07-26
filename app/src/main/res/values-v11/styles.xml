@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@android:style/Widget.Holo.ProgressBar.Horizontal" />
+    <style name="Widget.AppCompat.Base.ProgressBar" parent="@android:style/Widget.Holo.ProgressBar" />
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="@android:style/Widget.Holo.AutoCompleteTextView" />
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="@android:style/Widget.Holo.Light.AutoCompleteTextView" />
+    <style name="Theme.Base" parent="@android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+    </style>
+    <style name="Theme.Base.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light" />
+    <style name="Theme.Splash" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Theme.Splash.Fullscreen" parent="@style/Theme.Splash">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme.Light" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/default_window_bg</item>
+    </style>
+    <style name="Theme.Light.DarkActionBar" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/default_window_bg</item>
+    </style>
+    <style name="Theme.Light.NoActionBar" parent="@style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:dropDownListViewStyle">@style/suggest_style</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="CustomTabPageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:background">@drawable/umeng_xp_hl_indicator_tb</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8.0dip</item>
+        <item name="android:divider">@drawable/umeng_xp_hl_indicator_divider</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+    <style name="success_dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="loading_dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="detail_comment_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateVisible</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="loading_progress_dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="confirm_dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+</resources>

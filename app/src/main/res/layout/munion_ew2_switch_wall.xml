@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="49.0dip" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip">
+        <ImageView android:layout_width="23.0dip" android:layout_height="23.0dip" android:src="@drawable/munion_ew2_switch_wall_selector" />
+        <TextView android:textSize="9.0sp" android:textColor="#ff7c7c7c" android:id="@id/munion_switch_wall_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用推荐" />
+    </LinearLayout>
+</FrameLayout>

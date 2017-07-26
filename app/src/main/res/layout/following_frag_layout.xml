@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?mainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="?recommend_follow_text" android:gravity="center_vertical" android:id="@id/recommend_to_follow" android:background="?recommend_follow_bg" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="@string/recommend_to_follow_tip" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/recommend_to_follow" android:layout_alignWithParentIfMissing="true" style="@style/essay_list_style" />
+    <LinearLayout android:orientation="vertical" android:id="@id/no_content_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textColor="?follow_fan_error_tip" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/no_content_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="laji" android:drawableTop="?follow_fan_list_empty" android:drawablePadding="25.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="?follow_fan_error_tip2" android:layout_gravity="center_horizontal" android:id="@id/no_content_tip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test" />
+    </LinearLayout>
+    <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/notify_view" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="meiyoule" android:layout_below="@id/recommend_to_follow" android:layout_alignWithParentIfMissing="true" style="?attr/notifyViewStyle" />
+</RelativeLayout>

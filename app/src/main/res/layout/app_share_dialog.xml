@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/platform_weixin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?login_plat_weixin_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="?login_fragment_plat_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_weixin_share" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/platform_wx_timeline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?login_plat_weixin_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="?login_fragment_plat_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_weixin_share" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/platform_qq" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?login_plat_qq_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="?login_fragment_plat_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_qq_share" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/platform_weibo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?login_plat_weibo_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="?login_fragment_plat_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_weibo_share" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/platform_tencent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?login_plat_weixin_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="?login_fragment_plat_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_weixin_share" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/platform_qzone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?login_plat_weixin_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="?login_fragment_plat_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_weixin_share" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/platform_renren" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?login_plat_renren_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="?login_fragment_plat_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_renren_share" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/copy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="?login_plat_weibo_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="?login_fragment_plat_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_weibo_share" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

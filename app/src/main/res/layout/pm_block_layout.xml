@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <RadioGroup android:id="@id/block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RadioButton android:id="@id/checkbox_all" android:checked="true" android:text="@string/pm_allow_all" style="@style/setting_radio_btn" />
+        <RadioButton android:id="@id/checkbox_following" android:layout_marginTop="-0.5dip" android:text="@string/pm_allow_following" style="@style/setting_radio_btn" />
+    </RadioGroup>
+    <TextView android:textSize="13.0sp" android:textColor="?myDescriptionColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="@string/pm_block_tip" />
+</LinearLayout>

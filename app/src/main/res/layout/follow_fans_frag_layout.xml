@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?mainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/title_bar" android:layout_height="43.0dip" style="@style/title_bar_style">
+        <TextView android:id="@id/back" android:visibility="visible" android:text="" style="@style/back_view" />
+        <TextView android:id="@id/activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow_and_fans" android:layout_centerInParent="true" style="@style/title_text_style" />
+        <ImageView android:id="@id/recommending_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="?recommend_following" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.astuetz.PagerSlidingTabStrip android:textSize="16.0sp" android:textColor="?follow_fan_text" android:id="@id/tabs" android:background="?bg_activity_tab" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/title_bar" app:pstsIndicatorColor="?bg_activity_tab_indicator" app:pstsUnderlineColor="?bg_activity_tab_underline" app:pstsIndicatorHeight="2.0dip" app:pstsUnderlineHeight="1.0px" app:pstsDividerPadding="5.0dip" app:pstsShouldExpand="true" />
+    <com.ss.android.common.ui.view.SSViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabs" />
+</RelativeLayout>

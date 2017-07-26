@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?feed_god_comment_label_text" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/activity_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:maxHeight="@dimen/activity_item_banner_max_height" />
+        <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/creat_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/dead_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/activity_head_head" />
+        </RelativeLayout>
+        <View android:background="?bg_activity_tab_underline" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <TextView android:id="@id/activity_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" style="@style/activity_head_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+            <TextView android:id="@id/join" android:background="?bg_activity_join_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/join_activity" android:layout_weight="2.0" style="@style/activity_head_btn" />
+            <TextView android:layout_gravity="center" android:id="@id/share" android:background="?bg_activity_share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_activity" android:layout_weight="1.0" style="@style/activity_head_btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="?default_text" android:id="@id/join_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/activity_order" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentRight="true">
+            <TextView android:id="@id/time_order" android:layout_width="78.0dip" android:layout_height="fill_parent" android:text="@string/activity_order_time" style="@style/activity_order" />
+            <TextView android:id="@id/hot_order" android:layout_width="78.0dip" android:layout_height="fill_parent" android:layout_marginLeft="77.0dip" android:text="@string/activity_order_hot" style="@style/activity_order" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

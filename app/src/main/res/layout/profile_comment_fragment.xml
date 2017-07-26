@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_alignTop="@id/listview" style="@style/list_notify_view" />
+    <FrameLayout android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="340.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/empty_view_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/social_error_tip_no_update" />
+    </FrameLayout>
+    <com.ss.android.essay.lib.widgets.ParallaxScollListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" style="@style/essay_list_style" />
+    <include android:id="@id/profile_edit_toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/profile_edit_toolbar" />
+</RelativeLayout>

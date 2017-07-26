@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/tab_activity"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/main_area" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:id="@id/empty_notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/have_a_rest" android:layout_below="@id/title_bar" style="?attr/notifyViewStyle" />
+    <SurfaceView android:id="@id/hack_surface_view_flicker" android:visibility="gone" android:layout_width="0.0px" android:layout_height="0.0px" />
+</RelativeLayout>

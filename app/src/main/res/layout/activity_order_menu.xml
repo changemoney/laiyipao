@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?order_menu_bg" android:layout_width="122.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/time_order" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="@string/activity_order_time" style="@style/menu_item" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0px" style="@style/dividing_line" />
+    <TextView android:id="@id/hot_order" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="@string/activity_order_hot" style="@style/menu_item" />
+</LinearLayout>

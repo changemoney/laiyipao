@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="165.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/recommand_channel" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/essay_tab_recommend" android:drawableLeft="?ic_recommend_channel_dock" style="@style/menu_item" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0px" style="@style/dividing_line" />
+    <TextView android:id="@id/best_channel" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/essay_tab_hot" android:drawableLeft="?ic_best_channel_dock" style="@style/menu_item" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0px" style="@style/dividing_line" />
+    <TextView android:id="@id/hot_channel" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/essay_tab_recent" android:drawableLeft="?ic_hot_channel_dock" style="@style/menu_item" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0px" style="@style/dividing_line" />
+    <TextView android:id="@id/new_channel" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/essay_tab_origin" android:drawableLeft="?ic_new_channel_dock" style="@style/menu_item" />
+</LinearLayout>

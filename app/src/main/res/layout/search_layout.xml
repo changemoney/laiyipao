@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" style="@style/title_bar_style">
+        <TextView android:id="@id/back" style="@style/back_view" />
+        <LinearLayout android:gravity="center_vertical" android:background="?search_input_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="?search_icon" />
+            <EditText android:textSize="16.0sp" android:textColor="?search_input_text" android:id="@id/search_input" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch">
+                <requestFocus />
+            </EditText>
+            <ImageView android:id="@id/input_delete" android:padding="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?search_input_delete" />
+        </LinearLayout>
+        <TextView android:enabled="false" android:textSize="13.0sp" android:textColor="?search_btn_text" android:gravity="center" android:id="@id/search_btn" android:background="?search_btn_bg" android:layout_width="45.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/search_text" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_bar" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_layout" android:background="?mainBackground" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_bar">
+        <TextView android:id="@id/error_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_error_network" android:drawableTop="?ugc_tip_no_connection" android:drawablePadding="15.0dip" style="@style/list_loading_text" />
+        <TextView android:id="@id/error_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/label_retry_load" style="@style/vote_login_btn" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" style="@style/title_bar_style">
+        <include layout="@layout/profile_badge_layout" />
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message.maintab.titlebar.title" android:layout_centerInParent="true" style="@style/title_text_style" />
+        <TextView android:id="@id/black_list" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/message.maintab.titlebar.blacklist" android:layout_alignParentRight="true" style="@style/title_bar_button" />
+    </RelativeLayout>
+    <ListView android:id="@id/message_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/pm_session_list_style" />
+</LinearLayout>

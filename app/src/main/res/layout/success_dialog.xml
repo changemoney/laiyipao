@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?more_action_dialog_bg" android:layout_width="240.0dip" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="?more_action_dialog_text" android:gravity="center" android:id="@id/message" android:layout_width="240.0dip" android:layout_height="40.0dip" />
+    <View android:background="?list_item_divider" android:layout_width="240.0dip" android:layout_height="@dimen/divider_height" />
+    <TextView android:textSize="15.0dip" android:textColor="?success_dialog_btn" android:gravity="center" android:id="@id/ok" android:layout_width="240.0dip" android:layout_height="40.0dip" android:text="@string/label_ok" android:layout_weight="1.0" />
+</LinearLayout>

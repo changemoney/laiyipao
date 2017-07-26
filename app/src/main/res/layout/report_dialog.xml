@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?reviewReportDialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/trash" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/default_report_item_ad" android:layout_weight="1.0" style="@style/report_dialog_item" />
+        <TextView android:id="@id/sexy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/default_report_item_sexy" android:layout_weight="1.0" style="@style/report_dialog_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/fake" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/default_report_item_fake" android:layout_weight="1.0" style="@style/report_dialog_item" />
+        <TextView android:id="@id/old" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/default_report_item_old" android:layout_weight="1.0" style="@style/report_dialog_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/copy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/default_report_item_copy" android:layout_weight="1.0" style="@style/report_dialog_item" />
+        <TextView android:id="@id/other" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/default_report_item_other" android:layout_weight="1.0" style="@style/report_dialog_item" />
+    </LinearLayout>
+    <View android:background="?list_item_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="18.0sp" android:textColor="?report_dialog_cancle" android:gravity="center" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/cancel" />
+</LinearLayout>

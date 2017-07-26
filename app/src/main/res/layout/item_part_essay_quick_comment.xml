@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?bg_list_item_middle" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <EditText android:textSize="15.0dip" android:textColorHint="?pink_color" android:id="@id/quick_comment_et" android:background="?bg_feed_quick_comment_edittext" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/quick_comment_hint" />
+    </RelativeLayout>
+</RelativeLayout>

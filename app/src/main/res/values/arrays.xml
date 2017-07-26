@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="download_choices">
+        <item>前20张</item>
+        <item>前40张</item>
+        <item>前60张</item>
+        <item>前80张</item>
+        <item>前100张</item>
+    </string-array>
+    <array name="why_pictures">
+        <item>@drawable/why1</item>
+        <item>@drawable/why2</item>
+    </array>
+    <string-array name="account_avatar_type">
+        <item>从相册选择</item>
+        <item>拍照</item>
+        <item>取消</item>
+    </string-array>
+    <array name="guide_pictures">
+        <item>@drawable/guide_pictures1</item>
+    </array>
+    <string-array name="media_video_edit_copy_actions">
+        <item>复制到下一帧</item>
+        <item>复制到所有帧</item>
+    </string-array>
+    <string-array name="media_video_edit_del_actions">
+        <item>清除当前帧</item>
+        <item>清除所有帧</item>
+    </string-array>
+    <string-array name="weekday_names">
+        <item>星期天</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="upload_image_type">
+        <item>拍照</item>
+        <item>手机相册</item>
+    </string-array>
+    <string-array name="upload_video_type">
+        <item>录像</item>
+        <item>手机相册</item>
+    </string-array>
+    <string-array name="modify_image_type">
+        <item>删除图片</item>
+        <item>拍照</item>
+        <item>手机相册</item>
+    </string-array>
+    <string-array name="video_edit_copy_actions">
+        <item>复制到下一帧</item>
+        <item>复制到所有帧</item>
+    </string-array>
+    <string-array name="video_edit_del_actions">
+        <item>清除当前帧</item>
+        <item>清除所有帧</item>
+    </string-array>
+    <string-array name="message_del_actions">
+        <item>删除此条消息</item>
+        <item>清空消息列表</item>
+    </string-array>
+</resources>

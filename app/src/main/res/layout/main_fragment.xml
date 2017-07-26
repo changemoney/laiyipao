@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" style="@style/title_bar_style">
+        <include layout="@layout/profile_badge_layout" />
+        <ImageView android:layout_gravity="center" android:id="@id/app_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?neihan_logo_icon" android:scaleType="matrix" android:layout_centerInParent="true" />
+        <com.ss.android.essay.base.widget.CategoryIndicatorView android:id="@id/category_indicator" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?ic_publish" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.ss.android.essay.base.widget.CustomLinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <RelativeLayout android:id="@id/topbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ss.android.essay.base.widget.CategoryTabStrip android:id="@id/category_tab" android:background="?category_strip_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginRight="20.0dip" />
+            <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?topbar_right_arrow" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.ss.android.common.ui.view.SSViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ss.android.essay.base.widget.CustomLinearLayout>
+    <ImageView android:id="@id/refresh" android:background="?bg_refresh_btn" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_refresh" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

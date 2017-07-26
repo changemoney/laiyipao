@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/browser_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_bottombar" layout="@layout/browser_fragment" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottombar" android:background="@color/bg_browser_bottom_bar_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/ibtn_refresh" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_html_refresh" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/ibtn_share" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_html_share" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/ibtn_font" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_html_font" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include android:id="@id/view_fontsize" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/browser_bottombar_fontsize" />
+    <include android:id="@id/view_load_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/web_load_failed" />
+</RelativeLayout>

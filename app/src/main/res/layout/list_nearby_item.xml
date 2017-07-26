@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?list_item_exclude_bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="12.0dip" android:src="?list_nearby_item_top_icon" />
+    <View android:background="?list_item_divider" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="20.0dip" android:text="@string/list_item_nearby_content" android:lineSpacingMultiplier="1.5" style="@style/list_item_content" />
+</LinearLayout>

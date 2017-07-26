@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" style="@style/essay_list_style" />
+    <TextView android:textSize="14.0sp" android:textColor="?nearby_empty_text" android:gravity="center_horizontal" android:id="@id/ugc_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="30.0dip" android:layout_centerInParent="true" android:lineSpacingMultiplier="1.2" />
+</RelativeLayout>

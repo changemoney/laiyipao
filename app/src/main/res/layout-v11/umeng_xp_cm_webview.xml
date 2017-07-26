@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/umeng_xp_rootId" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/actionbar" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/action_back" android:clickable="false" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/umeng_xp_cm_selector_back" android:scaleType="fitCenter" android:layout_weight="1.0" android:alpha="0.3" />
+        <ImageView android:id="@id/action_forward" android:clickable="false" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/umeng_xp_cm_selector_forward" android:scaleType="fitCenter" android:layout_weight="1.0" android:alpha="0.3" />
+        <View android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/action_reflush" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/umeng_xp_cm_selector_reflush" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        <ImageView android:id="@id/action_close" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/umeng_xp_cm_selector_close" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.ss.android.newmedia.ui.webview.SSWebView android:id="@id/umeng_xp_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/actionbar" />
+    <ProgressBar android:id="@id/umeng_xp_progressbar" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:progressDrawable="@drawable/umeng_xp_cm_webview_progressbar_drawable" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

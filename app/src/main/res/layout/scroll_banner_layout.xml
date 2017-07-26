@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/banner_layout" android:background="?banner_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.common.ui.view.SSViewPager android:id="@id/scroll_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/bottom_bar_layout" android:background="?banner_bottom_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/dot_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="?banner_tip" android:id="@id/banner_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/dot_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

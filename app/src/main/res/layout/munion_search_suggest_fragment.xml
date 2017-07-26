@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.umeng.newxp.view.widget.KeyboardListenRelativeLayout android:orientation="vertical" android:id="@id/munion_suggest_keyboard" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/munion_title_content" android:background="@drawable/munion_ew2_title_background" android:layout_width="fill_parent" android:layout_height="@dimen/munion_search_edit_height">
+            <RelativeLayout android:id="@id/munion_search_edit_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/munion_cancle_search" android:layout_toRightOf="@id/munion_title_left_button">
+                <EditText android:textSize="14.0sp" android:textColor="#ff434343" android:textColorHint="#ff898989" android:id="@id/munion_search_edit" android:background="@drawable/munion_title_suggest_icon_edittext_background" android:paddingLeft="37.0dip" android:paddingRight="38.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxLines="1" android:lines="1" android:layout_centerVertical="true" android:imeOptions="actionSearch" />
+                <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/munion_title_suggest_icon_search" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/munion_suggest_delete" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/munion_title_suggest_icon_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:textSize="14.0sp" android:id="@id/munion_cancle_search" android:background="@drawable/munion_title_search_right_button_cancle_selector" android:layout_width="52.0dip" android:layout_height="32.0dip" android:layout_marginRight="15.0dip" android:text="取消" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/munion_search_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/munion_title_content" />
+        <ListView android:id="@id/munion_suggest_list" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffe7ecf0" android:dividerHeight="1.0dip" android:layout_below="@id/munion_title_content" />
+    </com.umeng.newxp.view.widget.KeyboardListenRelativeLayout>
+</com.taobao.munion.common.fragment.FragmentViewBase>

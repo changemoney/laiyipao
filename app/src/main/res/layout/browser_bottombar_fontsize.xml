@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_browser_bottom_bar_day" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/iv_icon" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_word" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/bg_browser_text_day" android:id="@id/tv_textsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/font_size" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_fontsize_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignTop="@id/iv_icon" android:layout_alignBottom="@id/iv_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Button android:textSize="13.0sp" android:textColor="@drawable/bg_fontsize_text_day_selector" android:layout_gravity="center" android:id="@id/btn_small" android:background="@drawable/bg_fontsize_left_day_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/font_size_small" />
+            <Button android:textSize="13.0sp" android:textColor="@drawable/bg_fontsize_text_day_selector" android:layout_gravity="center" android:id="@id/btn_middle" android:background="@drawable/bg_fontsize_middle_day_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/font_size_middle" />
+            <Button android:textSize="13.0sp" android:textColor="@drawable/bg_fontsize_text_day_selector" android:layout_gravity="center" android:id="@id/btn_large" android:background="@drawable/bg_fontsize_right_day_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/font_size_large" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/divider_fontsize" android:background="@color/bg_row_border" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:textSize="16.0sp" android:textColor="@color/bg_browser_text_day" android:id="@id/btn_done" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/label_finish" />
+</LinearLayout>

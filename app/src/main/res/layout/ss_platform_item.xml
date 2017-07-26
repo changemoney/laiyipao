@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3.0dip"
+    android:layout_marginRight="3.0dip">
+
+    <ImageView
+        android:id="@id/ss_icon"
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:layout_centerHorizontal="true"
+        android:padding="3.0dip"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@id/ss_indicator"
+        android:layout_width="16.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignBottom="@id/ss_icon"
+        android:layout_alignRight="@id/ss_icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/ss_check" />
+</RelativeLayout>

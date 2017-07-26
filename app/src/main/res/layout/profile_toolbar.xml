@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?profile_toolbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/profile_toolbar_left_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/profile_toolbar_left_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="?profile_toolbar_text_color" android:id="@id/profile_toolbar_left_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:drawablePadding="10.0dip" android:layout_toRightOf="@id/profile_toolbar_left_image" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/left_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small" />
+    </RelativeLayout>
+    <View android:background="?profile_toolbar_middle_line_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/profile_toolbar_right_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/profile_toolbar_right_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="?profile_toolbar_text_color" android:id="@id/profile_toolbar_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

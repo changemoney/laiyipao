@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/tab_activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/title_bar" />
+
+    <include
+        android:id="@id/tool_bar"
+        layout="@layout/tool_bar_comment" />
+
+    <com.ss.android.common.ui.view.SSViewPager
+        android:id="@id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tool_bar"
+        android:layout_below="@id/title_bar" />
+
+    <ProgressBar
+        android:id="@id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/error_btn"
+        style="@style/vote_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/acrossing_error_btn"
+        android:visibility="gone" />
+
+    <SurfaceView
+        android:id="@id/hack_surface_view_flicker"
+        android:layout_width="0.0px"
+        android:layout_height="0.0px"
+        android:visibility="gone" />
+</RelativeLayout>

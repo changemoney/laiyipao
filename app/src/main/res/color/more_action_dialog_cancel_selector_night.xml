@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/more_action_dialog_cancel_pressed_night" />
+    <item android:color="@color/more_action_dialog_cancel_night" />
+</selector>

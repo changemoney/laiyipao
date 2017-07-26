@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_margin" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:background="?channel_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip">
+        <TextView android:id="@id/channel_section_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:drawablePadding="5.0dip" android:layout_centerVertical="true" style="@style/discovery_section" />
+        <TextView android:textColor="?channel_section_num" android:gravity="center" android:id="@id/channel_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toRightOf="@id/channel_section_text" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/channel_section_more_layout" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:id="@id/channel_section_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/discovery_section" />
+            <ImageView android:id="@id/channel_section_more_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

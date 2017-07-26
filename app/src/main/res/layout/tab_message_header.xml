@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/tab_message_header_space" android:paddingBottom="@dimen/tab_message_header_space" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?list_item_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include android:id="@id/tab_message_header_ugc" layout="@layout/tab_message_header_item" />
+    <View android:background="?list_item_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include android:id="@id/tab_message_header_system" layout="@layout/tab_message_header_item" />
+    <View android:background="?list_item_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include android:id="@id/tab_message_header_fans" layout="@layout/tab_message_header_item" />
+    <View android:background="?list_item_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_message_header_empty" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?ic_tab_message_header_empty" />
+        <TextView android:textSize="16.0sp" android:textColor="?pm_empty_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="约起来吧" />
+        <TextView android:textSize="13.0sp" android:textColor="?pm_empty_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去TA的主页就可以发悄悄话啦！" />
+    </LinearLayout>
+</LinearLayout>

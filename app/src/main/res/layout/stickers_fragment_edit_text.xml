@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.essay.media.stickers.ImeCloseEditText android:textSize="@dimen/media_text_editor_default_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/essay_stickers_edit_text" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/stickers_ime_edittext"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

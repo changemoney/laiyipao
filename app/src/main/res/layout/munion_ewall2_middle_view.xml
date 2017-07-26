@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taobao.munion.common.fragment.FragmentViewBase android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.taobao.munion.actionbar.ActionBar android:id="@id/munion_actionbar" style="@style/MunionActionBar" />
+        <com.taobao.munion.ewall2.PullToRefreshWebView android:id="@id/pull_refresh_webview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" android:layout_below="@id/munion_actionbar" ptr:ptrMode="both" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+        <com.taobao.munion.ewall2.BottomTabView android:id="@id/bottomBar" android:background="@drawable/munion_bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.taobao.munion.common.fragment.FragmentViewBase>

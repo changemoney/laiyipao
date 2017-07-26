@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ddffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/publish_text_label" android:gravity="center" android:id="@id/publish_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_text" android:drawableTop="?publish_dialog_chooser_text" android:drawablePadding="10.0dip" />
+            <View android:id="@id/text_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/publish_img_label" android:gravity="center" android:id="@id/publish_text_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_img" android:drawableTop="?publish_dialog_chooser_img" android:drawablePadding="10.0dip" />
+            <View android:id="@id/text_picture_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/publish_gif_label" android:gravity="center" android:id="@id/publish_gif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_gif" android:drawableTop="?publish_dialog_chooser_gif" android:drawablePadding="10.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/close" android:background="@drawable/ic_publish_close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

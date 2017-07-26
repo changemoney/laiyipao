@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/media_cut_root" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.essay.media.widget.VideoPlayView android:id="@id/video_cut_play_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ss.android.essay.media.widget.VideoCoverView android:id="@id/video_cut_cover_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageButton android:gravity="center" android:id="@id/video_cut_play_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_start_btn" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/video_cut_top_mask" android:background="@color/video_record_mask_color" android:paddingLeft="@dimen/video_record_layout_padding_horizontal" android:paddingRight="@dimen/video_record_layout_padding_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/video_record_top_mask_height">
+        <ImageButton android:id="@id/video_cut_cancel_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/video_record_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/video_preview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_cut_title" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/video_cut_next_button" android:background="#10000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true">
+            <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_edit_next" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/video_cut_bottom_panel" android:background="@color/media_preview_mask_color" android:layout_width="fill_parent" android:layout_height="@dimen/media_cut_panel_height" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:id="@id/video_cut_time_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="60S" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.ss.android.essay.media.widget.GraceListView android:layout_gravity="center" android:orientation="horizontal" android:id="@id/video_cut_frames_view" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="70.0dip" android:listSelector="@drawable/essay_list_selector" android:dividerHeight="0.0dip" android:layout_centerInParent="true" android:fastScrollEnabled="false" />
+        <com.ss.android.essay.media.widget.SectionBar android:layout_gravity="center" android:id="@id/video_cut_section_range_View" android:background="@null" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+        <View android:layout_gravity="center" android:id="@id/video_cut_play_progress_bar" android:background="@color/white" android:visibility="invisible" android:layout_width="2.0dip" android:layout_height="60.0dip" android:layout_centerVertical="true" />
+        <View android:id="@id/video_cut_frame_left_mask" android:background="#a0000000" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        <View android:id="@id/video_cut_frame_right_mask" android:background="#a0000000" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

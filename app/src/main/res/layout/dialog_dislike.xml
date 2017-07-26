@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?bg_dislike_dialog" android:layout_width="295.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="?dislike_dialog_title" android:gravity="center" android:background="?bg_dislike_dialog_title" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/dislike_dialog_title" />
+    <ListView android:id="@id/list" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/transparent" android:dividerHeight="10.0dip" />
+    <View android:background="?dislike_dialog_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="?dislike_dialog_cancel" android:gravity="center" android:id="@id/cancel_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dislike_dialog_cancel" android:layout_weight="1.0" />
+        <View android:background="?dislike_dialog_divider" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0dip" android:textColor="?pink_color" android:gravity="center" android:id="@id/ok_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dislike_dialog_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

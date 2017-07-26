@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?mainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <TextView android:textSize="15.0sp" android:textColor="?friend_recommend_text" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dip" android:text="@string/qr_code_download_text" android:lineSpacingMultiplier="1.5" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="37.0dip" android:src="?app_download_qr_code" />
+    <TextView android:textSize="16.0sp" android:textColor="?activity_head_btn_text" android:gravity="center" android:id="@id/invite" android:background="?bg_activity_join_btn" android:layout_width="210.0dip" android:layout_height="35.0dip" android:layout_marginTop="37.0dip" android:text="@string/invite_friend_text" android:onClick="showAppShareDialog" />
+</LinearLayout>

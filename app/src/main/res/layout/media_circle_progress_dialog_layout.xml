@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/media_process_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/media_process_progress_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_process_load_circle" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/processingn_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/processing_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/media_progress_dialog_processing" android:layout_below="@id/media_process_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

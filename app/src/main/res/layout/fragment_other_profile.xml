@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/list_error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/listview">
+        <TextView android:id="@id/list_error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/list_error_tip_text" />
+        <TextView android:id="@id/list_error_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/acrossing_error_btn" style="@style/vote_login_btn" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/notify_view" android:background="?bg_notify" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/notify_view_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/list_notify_view" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/notify_view_cancel_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center_vertical" android:id="@id/notify_view_divider" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" style="@style/notify_view_divider" />
+            <TextView android:id="@id/notify_view_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/list_notify_cancel_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/empty_notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="@string/have_a_rest" android:layout_below="@id/title_bar" style="?attr/notifyViewStyle" />
+    <ImageView android:id="@id/empty_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?ugcTipEmptyList" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/profile_title_bar" />
+</RelativeLayout>

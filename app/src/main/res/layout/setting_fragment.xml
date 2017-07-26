@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" style="@style/setting_item_head">
+        <TextView android:gravity="center" android:id="@id/friend_recommendation" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/menu_entry_recommend" android:layout_weight="1.0" style="@style/my_bottom_text" />
+        <View android:layout_gravity="center_vertical" android:background="?list_item_divider" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+        <TextView android:gravity="center" android:id="@id/feedback" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/setting_feedback" android:layout_weight="1.0" style="@style/my_bottom_text" />
+    </LinearLayout>
+    <ScrollView android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout" android:layout_below="@id/title_bar">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/pm_permission" android:layout_marginTop="10.0dip" style="@style/setting_item_sole">
+                    <TextView android:text="@string/who_can_send_msg" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <TextView android:id="@id/permission_user" style="@style/setting_alt_text_style" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/recommendation" android:visibility="gone" style="@style/setting_item_center">
+                    <TextView android:text="@string/setting_recommend" style="@style/setting_item_text" />
+                    <ImageView android:id="@id/recommend_new" android:visibility="invisible" style="@style/setting_hint_new" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/night_mode" android:layout_marginTop="10.0dip" style="@style/setting_item_head">
+                    <TextView android:text="@string/setting_night_mode" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/checkbox_night_mode" style="@style/setting_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/share_when_favor" style="@style/setting_item_center">
+                    <TextView android:text="@string/setting_share_when_favor" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/checkbox_share_when_favor" style="@style/setting_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/save_position" style="@style/setting_item_end">
+                    <TextView android:text="@string/setting_save_position" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/checkbox_save_position" style="@style/setting_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/set_font_size" android:layout_marginTop="10.0dip" style="@style/setting_item_head">
+                    <TextView android:text="@string/setting_font_size" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <RadioGroup android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/rg_font_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                        <RadioButton android:id="@id/rb_font_size_small" android:text="@string/setting_font_small" style="@style/setting_option_left" />
+                        <RadioButton android:id="@id/rb_font_size_medium" android:layout_marginLeft="-0.5dip" android:text="@string/setting_font_medium" style="@style/setting_option_center" />
+                        <RadioButton android:id="@id/rb_font_size_large" android:layout_marginLeft="-0.5dip" android:text="@string/setting_font_large" style="@style/setting_option_right" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:id="@id/load_image" style="@style/setting_item_end">
+                    <TextView android:text="@string/setting_load_image" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <RadioGroup android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/rg_load_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                        <RadioButton android:id="@id/rb_load_image_always" android:text="@string/setting_load_image_always" style="@style/setting_option_left" />
+                        <RadioButton android:id="@id/rb_load_image_wifi" android:layout_marginLeft="-0.5dip" android:text="@string/setting_load_image_wifi" style="@style/setting_option_center" />
+                        <RadioButton android:id="@id/rb_load_image_never" android:layout_marginLeft="-0.5dip" android:text="@string/setting_load_image_never" style="@style/setting_option_right" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:id="@id/auto_play_gif" android:layout_marginTop="10.0dip" style="@style/setting_item_sole">
+                    <TextView android:text="@string/setting_auto_play_gif" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/checkbox_auto_play_gif" style="@style/setting_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/auto_play_video" style="@style/setting_item_sole">
+                    <TextView android:text="@string/setting_auto_play_video" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/checkbox_auto_play_video" style="@style/setting_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/allow_pm_push" android:layout_marginTop="10.0dip" style="@style/setting_item_head">
+                    <TextView android:text="@string/pm_push" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/checkbox_allow_pm_push" style="@style/setting_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/notify" style="@style/setting_item_center">
+                    <TextView android:text="@string/setting_notify" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/checkbox_notify" style="@style/setting_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/location_publish" style="@style/setting_item_end">
+                    <TextView android:text="@string/setting_location_publish" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/checkbox_location_publish" style="@style/setting_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/use_help" android:layout_marginTop="10.0dip" style="@style/setting_item_head">
+                    <TextView android:text="@string/setting_use_help" style="@style/setting_item_text" />
+                    <ImageView android:id="@id/use_help_new" android:visibility="invisible" style="@style/setting_hint_new" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/clear" style="@style/setting_item_center">
+                    <TextView android:text="@string/setting_clear" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <TextView android:id="@id/cache_size" style="@style/setting_alt_text_style" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/contact_us" style="@style/setting_item_center">
+                    <TextView android:text="@string/setting_contact_us" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/update" style="@style/setting_item_center">
+                    <TextView android:text="@string/update" style="@style/setting_item_text" />
+                    <ImageView android:id="@id/version_new" android:visibility="gone" style="@style/setting_hint_new" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <TextView android:id="@id/current_version" style="@style/setting_alt_text_style" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/user_license" style="@style/setting_item_end">
+                    <TextView android:text="@string/setting_user_license" style="@style/setting_item_text" />
+                    <ImageView android:visibility="invisible" style="@style/setting_hint_new" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/event_host" android:layout_marginTop="15.0dip" style="@style/setting_item_head">
+                    <TextView android:id="@id/host_label" android:text="@string/setting_event_host" style="@style/setting_item_text" />
+                    <EditText android:textSize="14.0sp" android:gravity="center|left" android:id="@id/host_input" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/event_host_hint" android:singleLine="true" android:maxLength="50" android:dropDownSelector="@color/transparent" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone" />
+                    <TextView android:id="@id/host_ok" android:layout_marginRight="10.0dip" android:minWidth="25.0dip" android:minHeight="15.0dip" android:text="@string/confirm" style="@style/common_button" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/reset_app_guide" style="@style/setting_item_end">
+                    <TextView android:text="@string/setting_reset_app_guide" style="@style/setting_item_text" />
+                    <ImageView android:visibility="invisible" style="@style/setting_hint_new" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@id/copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_copyright" style="@style/setting_copyright_style" />
+            <TextView android:id="@id/release_info" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/setting_release_style" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

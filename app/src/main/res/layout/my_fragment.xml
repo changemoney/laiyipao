@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?titleBackground" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:id="@id/back" style="@style/back_view" />
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/title_text_style" />
+        <ImageView android:id="@id/setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="?mySettingIcon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/checkbox_night_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/bg_day_night_checkbox" android:layout_toLeftOf="@id/setting" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/my_head_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/my_followstyle_head_layout" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" style="@style/setting_item_end">
+                <LinearLayout android:id="@id/setting_publish_essay" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:src="?myWriteIcon" style="@style/setting_item_icon" />
+                    <TextView android:text="@string/setting_publish_essay" style="@style/setting_item_text" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="?list_item_divider" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+                <LinearLayout android:id="@id/setting_vote_essay" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:src="?myVoteIcon" style="@style/setting_item_icon" />
+                    <TextView android:text="@string/setting_vote_essay" style="@style/setting_item_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/placeholder" android:background="?myFriendsMarginTopColor" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/setting_my_neihan_friends" android:background="?settingItemHeadBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-0.5dip" android:layout_marginRight="-0.5dip">
+                <RelativeLayout android:id="@id/intermediate_layer" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <ImageView android:id="@id/myFriendsIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="?myFriendsIcon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0dip" android:textColor="?settingItemTextColor" android:id="@id/dongtai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/setting_my_friends" android:includeFontPadding="false" android:layout_toRightOf="@id/myFriendsIcon" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/latest_update_icon" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/facebook_popover" android:scaleType="fitXY" android:layout_toLeftOf="@id/friends_arrow" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/latest_update_red_point" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="-18.0dip" android:layout_marginBottom="-12.0dip" android:src="?myFriendsUpdateIndicator" android:scaleType="fitXY" android:layout_toRightOf="@id/latest_update_icon" android:layout_above="@id/latest_update_icon" />
+                    <ImageView android:id="@id/friends_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="?arrowList" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/setting_my_private_msg" style="@style/setting_item_center">
+                    <ImageView android:src="?myPrivateMsgIcon" style="@style/setting_item_icon" />
+                    <TextView android:text="@string/setting_my_private_msg" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="?myHeadNotifyText" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/setting_my_private_msg_new" android:background="?myHeadRedNotify" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:minWidth="16.0dip" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/setting_my_nearby" style="@style/setting_item_end">
+                    <ImageView android:src="?my_profile_nearby_icon" style="@style/setting_item_icon" />
+                    <TextView android:text="@string/setting_my_nearby" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <TextView android:textSize="10.0sp" android:textColor="?myHeadNotifyText" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/setting_nearby_new" android:background="?myHeadRedNotify" android:visibility="visible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" />
+                    <ImageView style="@style/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/setting_my_message" android:layout_marginTop="15.0dip" style="@style/setting_item_head">
+                <ImageView android:src="?myMessageIcon" style="@style/setting_item_icon" />
+                <TextView android:text="@string/setting_my_message" style="@style/setting_item_text" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0sp" android:textColor="?myHeadNotifyText" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/setting_my_message_new" android:background="?myHeadRedNotify" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" />
+                <ImageView style="@style/setting_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/setting_my_essay" style="@style/setting_item_center">
+                <ImageView android:src="?myPublishIcon" style="@style/setting_item_icon" />
+                <TextView android:text="@string/setting_my_essay" style="@style/setting_item_text" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ImageView style="@style/setting_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/setting_my_comment" style="@style/setting_item_center">
+                <ImageView android:src="?myCommentIcon" style="@style/setting_item_icon" />
+                <TextView android:text="@string/setting_my_comment" style="@style/setting_item_text" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ImageView style="@style/setting_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/my_repin" style="@style/setting_item_end">
+                <ImageView android:src="?myFavoriteIcon" style="@style/setting_item_icon" />
+                <TextView android:text="@string/my_repin" style="@style/setting_item_text" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ImageView style="@style/setting_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/setting_game_entry" style="@style/setting_item_end">
+                <ImageView android:src="?ic_setting_game" style="@style/setting_item_icon" />
+                <TextView android:id="@id/setting_game_entry_text" android:text="@string/game_entry" style="@style/setting_item_text" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ImageView style="@style/setting_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/setting_my_extra" android:visibility="gone" android:layout_marginTop="15.0dip" style="@style/setting_item_sole">
+                <ImageView android:src="?myExtraIcon" style="@style/setting_item_icon" />
+                <TextView android:id="@id/setting_my_extra_title" style="@style/setting_item_text" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ImageView style="@style/setting_arrow" />
+            </LinearLayout>
+            <View android:id="@id/bottom_margin" android:background="?myFriendsMarginTopColor" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/setting_item_head">
+        <TextView android:gravity="center" android:id="@id/friend_recommendation" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/menu_entry_recommend" android:layout_weight="1.0" style="@style/my_bottom_text" />
+        <View android:layout_gravity="center_vertical" android:background="?list_item_divider" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+        <TextView android:gravity="center" android:id="@id/feedback" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/setting_feedback" android:layout_weight="1.0" style="@style/my_bottom_text" />
+    </LinearLayout>
+</LinearLayout>

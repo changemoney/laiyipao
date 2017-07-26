@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="?text_pm_send_time" android:layout_gravity="center_horizontal" android:id="@id/send_time" android:background="?bg_pm_send_time" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pm_avatar_size" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/content_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/pm_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="?pm_status" />
+            <TextView android:textSize="16.0sp" android:textColor="?pm_send_text_color" android:id="@id/pm_content" android:background="?pm_send_text_bg" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pm_avatar" android:layout_width="@dimen/pm_avatar_size" android:layout_height="@dimen/pm_avatar_size" android:layout_marginLeft="5.0dip" fresco:placeholderImage="?follow_fan_item_head" fresco:placeholderImageScaleType="center" fresco:roundAsCircle="true" />
+    </LinearLayout>
+</LinearLayout>

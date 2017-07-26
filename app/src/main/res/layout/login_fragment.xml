@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?mainBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ss_login_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/platform_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/login_layout_row1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:id="@id/platform_weixin" android:text="@string/ss_pname_weixin" android:drawableTop="?login_plat_weixin_icon" style="@style/login_fragment_platform_icon" />
+            <TextView android:id="@id/platform_qzone" android:text="@string/ss_pname_qzone" android:drawableTop="?login_plat_qq_icon" style="@style/login_fragment_platform_icon" />
+            <TextView android:id="@id/platform_weibo" android:text="@string/ss_pname_weibo" android:drawableTop="?login_plat_weibo_icon" style="@style/login_fragment_platform_icon" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/login_layout_row2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:id="@id/platform_tencent" android:text="@string/ss_pname_tencent" android:drawableTop="?login_plat_tencent_icon" style="@style/login_fragment_platform_icon" />
+            <TextView android:id="@id/platform_renren" android:text="@string/ss_pname_renren" android:drawableTop="?login_plat_renren_icon" style="@style/login_fragment_platform_icon" />
+            <TextView android:id="@id/platform_kaixin" android:text="@string/ss_pname_kaixin" android:drawableTop="?login_plat_kaixin_icon" style="@style/login_fragment_platform_icon" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/license_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/platform_layout">
+        <TextView android:textSize="12.0sp" android:textColor="?login_protocal_text_color" android:id="@id/agree_selected_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_drawer_profile_agree" android:drawableLeft="@drawable/login_agree_icon" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="?login_protocal_text_color" android:id="@id/deal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_drawer_profile_deal" />
+    </LinearLayout>
+</RelativeLayout>

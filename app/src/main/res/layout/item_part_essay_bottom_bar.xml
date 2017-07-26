@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/essay_item_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.common.ui.view.UnPressableLinearLayout android:id="@id/list_item_bottom_bar" android:background="?bg_list_item_below" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/list_item_bottom_bar">
+        <RelativeLayout android:id="@id/digg_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/digg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?attr/listItemActionDiggStyle" />
+            <com.ss.android.sdk.view.ActionAnimView android:id="@id/digg_anim" android:visibility="invisible" android:text="@string/action_increase" android:layout_alignRight="@id/digg" style="?attr/actionAnimIncreaseStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bury_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/bury" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?attr/listItemActionBuryStyle" />
+            <com.ss.android.sdk.view.ActionAnimView android:id="@id/bury_anim" android:visibility="invisible" android:text="@string/action_increase" android:layout_alignRight="@id/bury" style="?attr/actionAnimDecreaseStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/comment_count_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?attr/list_item_action_comment_style" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/more_action_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/more_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?attr/list_item_more_action" />
+        </RelativeLayout>
+    </com.ss.android.common.ui.view.UnPressableLinearLayout>
+</RelativeLayout>

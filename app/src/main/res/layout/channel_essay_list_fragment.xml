@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/essay_list_fragment" />
+    <RelativeLayout android:layout_width="48.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/refresh" android:background="?bg_refresh_btn" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_refresh" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="?attr/tabIndicatorNew" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ddffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/publish_text_label" android:gravity="center" android:id="@id/publish_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_select_online" android:drawablePadding="10.0dip" />
+            <View android:id="@id/text_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/publish_img_label" android:gravity="center" android:id="@id/publish_text_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_gallery" android:drawablePadding="10.0dip" />
+            <View android:id="@id/text_picture_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/publish_gif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_camera" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/close" android:background="@drawable/ic_publish_close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

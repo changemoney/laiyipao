@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/vote_action_color_selected_night" />
+    <item android:color="@color/vote_action_color_normal_night" />
+</selector>
